@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Guillermo", "last": "Lugo" },
+      "location": {
+        "street": { "number": 4432, "name": "Callejón Oaxaca" },
+        "city": "Apulco",
+        "state": "Nuevo Leon",
+        "country": "Mexico",
+        "postcode": 48744,
+        "coordinates": { "latitude": "23.5141", "longitude": "-100.4315" },
+        "timezone": { "offset": "-10:00", "description": "Hawaii" }
+      },
+      "email": "guillermo.lugo@example.com",
+      "login": {
+        "uuid": "68173096-da0d-4fb9-a411-3c4332ff0756",
+        "username": "bigbird314",
+        "password": "dante",
+        "salt": "2Nd30TLi",
+        "md5": "2351949a1a3117092130952789f2f246",
+        "sha1": "45255f388b51b4ed052d46900ec032f5e69b69ec",
+        "sha256": "46edc0b351cf9198068fd54c0a82e038854cd26cef3a0ccde2e6b883a907c3f4"
+      },
+      "dob": { "date": "1987-09-10T21:40:37.200Z", "age": 36 },
+      "registered": { "date": "2008-04-04T20:43:48.307Z", "age": 15 },
+      "phone": "(621) 990 4342",
+      "cell": "(612) 213 5287",
+      "id": { "name": "NSS", "value": "02 55 97 3923 8" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/20.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/20.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/20.jpg"
+      },
+      "nat": "MX"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Anaïs", "last": "Renaud" },
+      "location": {
+        "street": { "number": 7376, "name": "Place de la Mairie" },
+        "city": "Champigny-sur-Marne",
+        "state": "Finistère",
+        "country": "France",
+        "postcode": 31844,
+        "coordinates": { "latitude": "-52.2818", "longitude": "-113.9316" },
+        "timezone": {
+          "offset": "-7:00",
+          "description": "Mountain Time (US & Canada)"
+        }
+      },
+      "email": "anais.renaud@example.com",
+      "login": {
+        "uuid": "432583cb-1489-4fc5-b45d-681dc2b43436",
+        "username": "redwolf178",
+        "password": "test2",
+        "salt": "xhRVdQym",
+        "md5": "330b66084a7b8b2fee310deb9eb02081",
+        "sha1": "dcab63596cac8f6ecd32d7bd7fff058f4cfc3228",
+        "sha256": "abda030f5a4b5b8a63b503143dfa410e4934349e3bd36fae2dc9bd8fee62bd33"
+      },
+      "dob": { "date": "1969-08-19T10:22:54.047Z", "age": 54 },
+      "registered": { "date": "2021-10-22T22:13:17.906Z", "age": 1 },
+      "phone": "05-20-33-36-57",
+      "cell": "06-40-49-74-65",
+      "id": { "name": "INSEE", "value": "2690732805869 42" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/21.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/21.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/21.jpg"
+      },
+      "nat": "FR"
+    },
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Mandy", "last": "Garcia" },
+      "location": {
+        "street": { "number": 5937, "name": "Oaks Cross" },
+        "city": "Westminster",
+        "state": "Dumfries and Galloway",
+        "country": "United Kingdom",
+        "postcode": "HE66 4RD",
+        "coordinates": { "latitude": "-68.6559", "longitude": "73.3072" },
+        "timezone": { "offset": "+3:30", "description": "Tehran" }
+      },
+      "email": "mandy.garcia@example.com",
+      "login": {
+        "uuid": "c0a63eae-17f3-4f31-956a-8b707fb6a854",
+        "username": "orangewolf270",
+        "password": "spider1",
+        "salt": "SHqZGzbe",
+        "md5": "43f13621ec502802dc2e41d5c9033d6a",
+        "sha1": "7fd2a7e27ddd07f6c121473a6d1ebde2cb582266",
+        "sha256": "1106a045df778b5f23c33138a36870facc1699372cea765e128089135d115257"
+      },
+      "dob": { "date": "1965-03-14T01:44:22.057Z", "age": 58 },
+      "registered": { "date": "2022-02-15T18:05:51.357Z", "age": 1 },
+      "phone": "0141 661 0024",
+      "cell": "07253 254110",
+      "id": { "name": "NINO", "value": "YL 28 06 54 J" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/46.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/46.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/46.jpg"
+      },
+      "nat": "GB"
+    }
+  ],
+  "info": {
+    "seed": "0cbd081cb06da76f",
+    "results": 3,
+    "page": 1,
+    "version": "1.4"
+  }
+}
