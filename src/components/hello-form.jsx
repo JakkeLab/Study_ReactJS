@@ -1,5 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { MyContext } from "./hello-context";
+
 export const HelloForm = () => {
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [isChecked] = useContext(MyContext);
+
   const clickHandler = (event) => {
     event.preventDefault();
     event.stopPropagation();
@@ -7,8 +13,6 @@ export const HelloForm = () => {
     setName("");
     setSurname("");
   };
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
 
   return (
     <form>
@@ -30,7 +34,9 @@ export const HelloForm = () => {
           }}
         ></input>
       </label>
-      <button onClick={clickHandler}>Submit!</button>
+      <button disabled={isChecked} onClick={clickHandler}>
+        Submit!
+      </button>
     </form>
   );
 };

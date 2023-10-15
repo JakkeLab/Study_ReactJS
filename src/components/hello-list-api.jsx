@@ -15,6 +15,22 @@ export const HelloListApi = () => {
     //     });
     //   }
     // });
+
+    const fetchNames = async () => {
+      const response = await fetch("https://randomuser.me/api/?results=8");
+      if (response) {
+        const data = await response.json();
+        const newNames = [];
+        for (const result of data.results) {
+          newNames.push(result.name.first);
+        }
+        // data.results.forEach((result) => {
+        // });
+        setNames(newNames);
+      }
+    };
+
+    fetchNames();
   }, []);
 
   return (
