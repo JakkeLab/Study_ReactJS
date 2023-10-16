@@ -1,18 +1,29 @@
 import React from "react";
+
 import "./global.css";
-import { HelloRef } from "./components/hello-ref";
+import { HelloContext } from "./components/hello-context";
+import { HelloCheckBox } from "./components/hello-checkbox";
+import { HelloForm } from "./components/hello-form";
 
 export function App() {
   return (
     <>
-      <HelloRef></HelloRef>
+      <div>
+        <HelloContext>
+          <HelloCheckBox />
+          <HelloForm />
+        </HelloContext>
+      </div>
     </>
   );
 }
 
 // import { HelloListApi } from "./components/hello-list-api";
+// import { HelloRef } from "./components/hello-ref";
+// import { HelloMemo } from "./components/memo/hello-memo";
+// import { HelloPortal } from "./components/hello-portal";
 
-// import { HelloCheckBox } from "./components/hello-checkbox";
+// 6 import { HelloCheckBox } from "./components/hello-checkbox";
 // import { HelloButton } from "./components/hello-button";
 // import { HelloWorld } from "./components/hello-world";
 // import { HelloList } from "./components/hello-list";

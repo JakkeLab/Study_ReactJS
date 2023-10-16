@@ -1,16 +1,13 @@
 import { createContext, useState } from "react";
-import { HelloCheckBox } from "./hello-checkbox";
-import { HelloForm } from "./hello-form";
 
 export const MyContext = createContext();
 
-export const HelloContext = () => {
+export const HelloContext = ({ children }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
     <MyContext.Provider value={[isChecked, setIsChecked]}>
-      <HelloCheckBox></HelloCheckBox>
-      <HelloForm></HelloForm>
+      {children}
     </MyContext.Provider>
   );
 };
