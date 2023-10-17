@@ -1,36 +1,27 @@
-import { useState, useEffect } from "react";
+import { useEffect, useContext } from "react";
+import { ApplicationContext } from "../app-context";
 
 export const HelloCounter = () => {
-  const [wallCount, setWallCount] = useState(0);
-  const [slabCount, setSlabCount] = useState(0);
+  const [state, dispatch] = useContext(ApplicationContext);
+  const {count} = state;
 
-  useEffect(() => {
-    console.log("Counter updated to: " + wallCount);
-    document.title = `Count: ${wallCount}`;
-  }, [wallCount]);
+  const handleClick = () => {
+    dispatch({type:"INCREMENT"});
+  }
 
-  useEffect(() => {
-    console.log("Hei");
-  }, []);
+  // useEffect(() => {
+  //   console.log("Counter updated to: " + wallCount);
+  //   document.title = `Count: ${wallCount}`;
+  // }, [wallCount]);
+
+  // useEffect(() => {
+  //   console.log("Hei");
+  // }, []);
 
   return (
     <>
-      <div>Counter: {wallCount}</div>
-      <button
-        onClick={() => {
-          setWallCount(wallCount + 1);
-        }}
-      >
-        Walls
-      </button>
-      <div>Counter: {slabCount}</div>
-      <button
-        onClick={() => {
-          setSlabCount(slabCount + 1);
-        }}
-      >
-        Slabs
-      </button>
+      <div>Counter: {count}</div>
+      <button onClick={handleClick}>Increment</button>
     </>
   );
 };
