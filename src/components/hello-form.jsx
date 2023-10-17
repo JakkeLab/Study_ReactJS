@@ -1,10 +1,11 @@
 import { useContext, useState } from "react";
 import { MyContext } from "./hello-context";
+import { ApplicationContext } from "../app-context";
 
 export const HelloForm = () => {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
-  const [isChecked] = useContext(MyContext);
+  const [state] = useContext(ApplicationContext);
 
   const clickHandler = (event) => {
     event.preventDefault();
@@ -34,7 +35,7 @@ export const HelloForm = () => {
           }}
         ></input>
       </label>
-      <button disabled={isChecked} onClick={clickHandler}>
+      <button disabled={state.isChecked} onClick={clickHandler}>
         Submit!
       </button>
     </form>

@@ -1,20 +1,18 @@
 import React from "react";
-
 import "./global.css";
-import { HelloContext } from "./components/hello-context";
+import { AppContext } from "./app-context";
 import { HelloCheckBox } from "./components/hello-checkbox";
+import { HelloCounter } from "./components/hello-counter";
 import { HelloForm } from "./components/hello-form";
+
 
 export function App() {
   return (
-    <>
-      <div>
-        <HelloContext>
-          <HelloCheckBox />
-          <HelloForm />
-        </HelloContext>
-      </div>
-    </>
+      <AppContext>
+        <HelloCheckBox/>
+        <HelloForm/>
+        <HelloCounter/>
+      </AppContext>
   );
 }
 
@@ -22,6 +20,9 @@ export function App() {
 // import { HelloRef } from "./components/hello-ref";
 // import { HelloMemo } from "./components/memo/hello-memo";
 // import { HelloPortal } from "./components/hello-portal";
+// import { HelloContext } from "./components/hello-context";
+// import { HelloCheckBox } from "./components/hello-checkbox";
+// import { HelloForm } from "./components/hello-form";
 
 // 6 import { HelloCheckBox } from "./components/hello-checkbox";
 // import { HelloButton } from "./components/hello-button";
